@@ -1,8 +1,12 @@
 % !TEX program = xelatex
-
 \documentclass{resume}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+% \usepackage{enumitem}
+\usepackage{graphicx}
+
+
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -18,70 +22,63 @@
 
 \section{Education}
 % Biotechnology,Department of Life Sciences and Medicine,University of Science and Technology of China
-\datedsubsection{\textbf{\href{https://www.ustc.edu.cn/}{Science and Technology of China}}, Hefei, China}{08/2021 -- 06/2025 (expected)}
-% B.Eng. in Computer Science and Technology, GPA: 3.77/4, Rank: 17/158
+\datedsubsection{\textbf{\href{https://www.ustc.edu.cn/}{University of Science and Technology of China}}, Hefei, China}{08/2021 -- 06/2025 (expected)}
+
 A third-year undergraduate student at the Department of Life Sciences and Medicine
 
-
-% \section{Selected Open-source Projects}
-% \datedsubsection{\href{https://github.com/thu-ml/tianshou}{\textbf{Tianshou}}: A Lightweight PyTorch Deep Reinforcement Learning (RL) Library}{03/2020 -- 08/2020}
-% \begin{itemize}
-%   \item Initialized project Tianshou with comprehensive functionality and high-quality software engineering standard
-%   \item Implemented 20+ RL algorithms, imitation/offline RL and multi-agent RL within only 4000 lines of code
-%   \item Supported any type of environment state, RNN-style training and parallel environment simulation (synchronous or asynchronous) for all algorithms with complete documentation and comprehensive unit tests
-%   \item Got more than 3.5k GitHub stars with more than 20 contributors around the world
-% \end{itemize}
-
-% \datedsubsection{\href{https://tuixue.online/visa/}{\textbf{tuixue.online/visa}}: A Real-time Display of U.S. Visa Appointment Status Website}{04/2020 -- 01/2021}
-% \begin{itemize}
-%   \item Implemented a fast crawler with Python, visualized data with Nginx+React and echarts.js
-%   \item Implemented a real-time notification system through Email / Telegram channel / QQ groups with Python
-%   \item Got 1,000,000 page views (PV) within 2 months; received donation more than CNY 15,000
-% \end{itemize}
-
-% \section{Experience}
-% \datedsubsection{\textbf{\href{https://sail.sea.com/}{Sea AI Lab}}}{Singapore}
-% \datedsubsection{Research Engineer}{05/2021 -- 09/2021}
-% \begin{itemize}
-% \item Implemented a high-performance parallel environment executor \textit{EnvPool} with C++ threadpool and pybind11
-% \item Achieved more than 1M FPS on single DGX-A100 (256 core) with Atari Pong video game, 5x faster than Python implementation, 2x faster than state-of-the-art solution
-% \item Integrated Atari/VizDoom video games and classic control environments, compatible with several RL libraries, planning to open-source in September 2021
-% \end{itemize}
+\datedsubsection{\textbf{\href{http://www.xgdfz.com/}{The Middle School Attached To Northwestern Polytechnical University}}, Xi'an, China}{08/2018 -- 06/2021}
 
 \section{Experience}
 
-\datedsubsection{\textbf{\href{https://chenwydj.github.io/}{Simon Fraser University, Wuyang Chen}}}{Canada}
-\datedsubsection{Research Intern}{06/2023 -- present}
+\datedsubsection{\textbf{Research on benign overfitting in computer vision}}{Research Assistant}
+\datedsubsection{\href{https://chenwydj.github.io/}{UC Berkeley, Dr.Wuyang Chen}}{06/2023 -- present}
 \begin{itemize}
-\item I am learning some basic techniques and knowledge of computer vision.
-\item We are currently exploring suitable image enhancement techniques for application in certain medical image databases.
+  \item Exploring the Influence of Various Image Augmentation Methods on the Recognition Accuracy of Common Deep Learning Networks.
+  \item Exploring the Relationship between Data Covariance Properties and Image Recognition Accuracy.
+  \item Summarizing the Evaluation of Various Image Augmentation Methods on Different Medical Imaging Datasets.
 \end{itemize}
 
-\datedsubsection{\textbf{\href{http://biomed.ustc.edu.cn/2022/0505/c24993a553532/page.htm}{University of Science and Technology of China, Yi Duan}}}{China}
-\datedsubsection{Research Intern}{01/2023-- present}
+\datedsubsection{\textbf{Isolation of bacteriophages targeting gut bacteria}}{Research Assistant}
+\datedsubsection{\href{http://biomed.ustc.edu.cn/2022/0505/c24993a553532/page.htm}{University of Science and Technology of China, Prof.Yi Duan}}{01/2023-- present}
 \begin{itemize}
-\item I am learning techniques related to animal experiments.
-\item I am learning basic biochemical laboratory techniques.
+\item Learning techniques related to animal experiments.
+\item Learning basic biochemical laboratory techniques.
 \end{itemize}
 
-\datedsubsection{\textbf{\href{https://sz.ustc.edu.cn/rcdw_show/44.html}{Suzhou Institute for Advanced Research,Xiaorong Xu}}}{China}
-\datedsubsection{Research Intern}{11/2022 -- 09/2023}
+\datedsubsection{\textbf{\small{Biodegradable needles for transdermal delivery in biofilm-infected chronic wounds}}}{Research Assistant}
+\datedsubsection{\href{https://sz.ustc.edu.cn/rcdw_show/44.html}{Suzhou Institute for Advanced Research,Prof.Xiaorong Xu}}{11/2022 -- 09/2023}
+
 \begin{itemize}
-\item I have acquired proficiency in finite element simulation software such as Comsol and Abaqus, applying them to conduct a series of simulation tasks, resulting in excellent experimental outcomes.
-\item I have designed a micro-needle system for the treatment of deep-seated tissue infections.
+  \item Proficiency in finite element simulation software (Comsol and Abaqus) for conducting simulation tasks.  \begin{itemize}
+    \item Utilized Abaqus to simulate the process of needle insertion into the skin.
+    \item Utilized Comsol to optimize material selection and the geometric shape of the needle.
+  \end{itemize}
+  \item Designed a long-needle for the treatment of deep-seated tissue infections.  \begin{itemize}
+    \item The design of this long needle was inspired by the mouthparts structure of insects such as mosquitoes and ticks.
+    \item This long needle inherits the advantages of microneedles and compensates for their limitations in terms of depth.
+  \end{itemize}
+  \item Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures. \begin{itemize}
+    \item A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
+  \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{\href{https://czlab.ustc.edu.cn/}{Laboratory of Biochemistry \& Structural Biology, Congzhao Zhou}}}{China}
-\datedsubsection{Research Intern}{09/2022 -- 06/2023}
+
+\datedsubsection{\textbf{\small{Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu}}}{Research Assistant}
+\datedsubsection{\href{https://czlab.ustc.edu.cn/}{Laboratory of Biochemistry \& Structural Biology, Prof.Congzhao Zhou}}{09/2022 -- 06/2023}
 \begin{itemize}
-\item I have studied the fundamentals and principles of bioinformatics, with a particular focus on genome analysis techniques.
-\item My team and I successfully isolated a strain of cyanobacteria from the Chaohu Lake water sample and conducted a comprehensive genome analysis. This work was recognized and awarded at the National University Life Science Competition that same year.
+  \item Studied fundamentals and principles of bioinformatics, with a focus on genome analysis techniques.
+  \item Successfully isolated three strains of cyanobacteria from Chaohu Lake water samples.
+  \item Conducted a genomic analysis of these three cyanobacteria strains, thereby determining their taxonomic classification.
+  \item Isolated some cyanophages from Chaohu Lake water samples using these isolated cyanobacteria strains.
+  \item Observed the morphology of these cyanophages under an electron microscope.
+  \item Thanks to this work, we received an award at the National University Life Science Competition in the same year.
+  
 \end{itemize}
 
 \section{Selected Awards}
 \begin{itemize}
-    \item Third Prize in the 8th National University Life Science Competition. \hfill 2023
-    \item COutstanding Undergraduate Scholarship, Bronze award 2023, 2022, 2021
+    \item A Prize in the 8th National University Life Science Competition \hfill 2023
+    \item Outstanding Undergraduate Scholarship  \hfill 2023, 2022, 2021
 \end{itemize}
 
 % \section{Publications}
